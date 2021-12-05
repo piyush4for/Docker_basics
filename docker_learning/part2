@@ -1,0 +1,10 @@
+## run docker
+docker run containerId
+docker exec -it containerId (bash or sh anything)
+
+###to create local Dockerfile
+docker build -t piyush/nodeapp .
+docker run -p 3000:3000  piyush/nodeapp
+
+## to combine two docker use docker-compose with yaml file
+docker-compose up --build
